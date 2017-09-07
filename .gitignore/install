@@ -1,0 +1,5 @@
+apt-get update
+sudo apt-get install python2.7 libsdl2-2.0 -y
+wget http://www.files.froemling.net/bombsquad/builds/BombSquad_Server_Linux_64bit_1.4.113.tar.gz
+tar -zxvf BombSquad_Server_Linux_64bit_1.4.113.tar.gz
+chmod 755 -R BombSquad_Server_Linux_64bit_1.4.113
