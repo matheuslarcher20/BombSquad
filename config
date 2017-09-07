@@ -19,8 +19,8 @@ fi
 clear
 echo -e "\033[1;37m VpsPacket © Script criado por: \033[2;32mMatheus Larcher \033[0m"
 echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;34m
-[1] On \033[2;36m(Ligar servidor)\033[1;34m
-[2] Off \033[2;36m(Desligar servidor)\033[1;34m
+[1] On \033[2;36m(Ligar o servidor)\033[1;34m
+[2] server_config \033[2;36m(Abrir o arquivo de Configuração do servidor)\033[1;34m
 [3] Install \033[2;36m(Instalar e configurar servidor)\033[1;34m
 [4] ssh_config \033[2;36m(Instalar e configurar servidor)\033[0m"
 read -p "[1-3]: " opcao
@@ -30,7 +30,7 @@ case $opcao in
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
   config;;
  2)
-  Off
+  server_config
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
   config;;
  3)
