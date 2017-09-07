@@ -24,4 +24,6 @@ TCPKeepAlive yes
 AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 UsePAM yes" > /etc/ssh/sshd_config
+service ssh restart
 echo -e "\033[05;32mInstalação concluida!!\033[0m"
+
