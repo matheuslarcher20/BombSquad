@@ -1,0 +1,2 @@
+echo -e "\033[1;32m Para desligar Ctrl + C\033[0m"
+./bombsquad_server
