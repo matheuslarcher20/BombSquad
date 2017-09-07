@@ -4,31 +4,3 @@ wget http://www.files.froemling.net/bombsquad/builds/BombSquad_Server_Linux_64bi
 tar -zxvf BombSquad_Server_Linux_64bit_1.4.113.tar.gz
 rm /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 chmod 755 -R BombSquad_Server_Linux_64bit_1.4.113
-function sshd_config(){ echo "Port 22
-Protocol 2
-KeyRegenerationInterval 3600
-ServerKeyBits 1024
-SyslogFacility AUTH
-LogLevel INFO
-LoginGraceTime 120
-PermitRootLogin yes
-StrictModes yes
-RSAAuthentication yes
-PubkeyAuthentication yes
-IgnoreRhosts yes
-RhostsRSAAuthentication no
-HostbasedAuthentication no
-PermitEmptyPasswords no
-ChallengeResponseAuthentication no
-PasswordAuthentication yes
-X11Forwarding yes
-X11DisplayOffset 10
-PrintMotd no
-PrintLastLog yes
-TCPKeepAlive yes
-#UseLogin no
-AcceptEnv LANG LC_*
-Subsystem sftp /usr/lib/openssh/sftp-server
-UsePAM yes" > /etc/ssh/sshd_config
-}
-echo -e "\033[05;31mInstalação concluida!!\033[0m"
