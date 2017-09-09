@@ -190,4 +190,4 @@ while restart_server:
             break
 
         time.sleep(1)
-" > /root/BombSquad_Server_Linux_64bit_1.4.113
+" > /root/BombSquad_Server_Linux_64bit_1.4.113/bombsquad_server
