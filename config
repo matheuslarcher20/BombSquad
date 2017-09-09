@@ -34,7 +34,7 @@ case $opcao in
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
   config;;
  3)
-  Install
+  install
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
   config;;
  4)
