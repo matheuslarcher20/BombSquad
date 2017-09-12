@@ -1,3 +1,4 @@
 echo -e "\033[1;32m Para desligar Ctrl + C\033[0m"
-cd BombSquad_Server_Linux_64bit_1.4.113
+cd BombSquad_Server
+cd BombSquad_Server_Linux_64bit*
 ./bombsquad_server
