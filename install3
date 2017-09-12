@@ -7,7 +7,7 @@ if [ -d /root/BombSquad_Server/$cachesv.tar.gz]
 then
 echo ""
 else
-echo -e "\033[05;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
+echo -e "\033[1;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
 exit
 fi
 apt-get update
@@ -29,4 +29,4 @@ done
 cd 
 rm -rf install 2> /dev/null
 rm -rf BombSquad 2> /dev/null
-echo -e "\033[1;32mInstalação concluida!!\033[0m"
+echo -e "\033[05;32mInstalação concluida!!\033[0m"
