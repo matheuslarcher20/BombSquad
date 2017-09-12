@@ -16,4 +16,4 @@ config['maxPartySize'] = $numero
 config['language'] = 'Portuguese'
 config['teamsSeriesLength'] = $ptvitoria
 config['ffaSeriesScoreToWin'] = $vitoria
-" > /root/$cachesv/config.py
+" > /root/BombSquad_Server/$cachesv/config.py
