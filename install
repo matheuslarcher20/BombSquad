@@ -1,11 +1,12 @@
-cd 
+mkdir BombSquad_Server
+cd BombSquad_Server
 apt-get update
 sudo apt-get install python2.7 libsdl2-2.0 -y
-wget http://www.files.froemling.net/bombsquad/builds/BombSquad_Server_Linux_64bit_1.4.113.tar.gz
-tar -zxvf BombSquad_Server_Linux_64bit_1.4.113.tar.gz
-rm BombSquad_Server_Linux_64bit_1.4.113.tar.gz 2> /dev/null
+wget http://www.files.froemling.net/bombsquad/builds/BombSquad_Server_Linux_64bit_1.4.123.tar.gz
+tar -zxvf BombSquad*
+rm BombSquad*.tar.gz 2> /dev/null
 rm /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
-chmod 755 -R BombSquad_Server_Linux_64bit_1.4.113
+chmod 755 -R BombSquad*
 apt-get install -y git
 git clone https://github.com/matheuslarcher20/BombSquad.git
 cd BombSquad
