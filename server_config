@@ -2,7 +2,7 @@
 echo -e "\033[1;32m Nome da sala : \033[0;37m"; read -p " " -e -i Home nome
 echo -e "\033[1;32m Numero de jogadores na sala : \033[0;37m"; read -p " " -e -i 6 numero
 echo -e "\033[1;32m Modo de jogo: free-for-all (ffa) ou Equipe (teams) ? \033[0;37m"; read -p " " -e -i ffa modo
-cachesv=$(cat BombSquad_Server_Linux_64bit_1.4.123)
+cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 if [[ "$modo" = "ffa" ]]; then
 echo -e "\033[1;32m Pontos Para Vencer a rodada : \033[0;37m"; read -p " " -e -i 24 vitoria
 ptvitoria=7
