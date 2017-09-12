@@ -6,9 +6,9 @@ wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
 if [ -d /root/BombSquad_Server/$cachesv.tar.gz]
 then
 echo -e "\033[05;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
+exit
 else
 echo ""
-exit
 fi
 apt-get update
 sudo apt-get install python2.7 libsdl2-2.0 -y
