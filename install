@@ -5,9 +5,9 @@ cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
 if [ -d /root/BombSquad_Server/$cachesv.tar.gz]
 then
-echo ""
-else
 echo -e "\033[05;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
+else
+echo ""
 exit
 fi
 apt-get update
