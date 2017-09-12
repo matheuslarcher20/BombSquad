@@ -25,6 +25,6 @@ mv $arqs /bin
 chmod +x /bin/$arqs
 done
 cd 
-rm -rf install 2> /dev/null
-rm -rf BombSquad 2> /dev/null
+rm -rf /BombSquad_Server/install 2> /dev/null
+rm -rf /BombSquad_Server/BombSquad 2> /dev/null
 echo -e "\033[05;32mInstalação concluida!!\033[0m"
