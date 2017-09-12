@@ -1,4 +1,4 @@
-cachesv=$(cat BombSquad_Server_Linux_64bit_1.4.123)
+cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 echo -e "\033[1;32m Para desligar Ctrl + C\033[0m"
 cd BombSquad_Server
 cd $cachesv
