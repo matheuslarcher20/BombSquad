@@ -3,7 +3,7 @@ cd BombSquad_Server
 echo "BombSquad_Server_Linux_64bit_1.4.123" > /etc/cache_BombSquad_Server.txt
 cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
-if [ -d $cachesv.tar.gz]
+if [ -f $cachesv.tar.gz]
 then
 echo ""
 else
