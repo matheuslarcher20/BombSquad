@@ -15,4 +15,4 @@ config['maxPartySize'] = $numero
 config['language'] = 'Portuguese'
 config['teamsSeriesLength'] = $ptvitoria
 config['ffaSeriesScoreToWin'] = $vitoria
-" > /root/BombSquad_Server_Linux_64bit_1.4.113/config.py
+" > /root/BombSquad_Server_Linux_64bit*/config.py
