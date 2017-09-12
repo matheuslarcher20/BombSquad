@@ -2,6 +2,14 @@ mkdir BombSquad_Server
 cd BombSquad_Server
 echo "BombSquad_Server_Linux_64bit_1.4.123" > /etc/cache_BombSquad_Server.txt
 cachesv=$(cat /etc/cache_BombSquad_Server.txt)
+wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
+if [ -d /root/BombSquad_Server/$cachesv.tar.gz]
+then
+echo ""
+else
+echo -e "\033[05;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
+exit
+fi
 apt-get update
 sudo apt-get install python2.7 libsdl2-2.0 -y
 wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
