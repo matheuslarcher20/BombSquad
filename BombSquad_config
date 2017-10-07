@@ -27,15 +27,15 @@ case $opcao in
  1)
   On
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
-  config;;
+  BombSquad_config;;
  2)
   server_config
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
-  config;;
+  BombSquad_config;;
  3)
   ssh_config
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
-  config;;
+  BombSquad_config;;
    *)
   id > /dev/null 2> /dev/null
 esac
