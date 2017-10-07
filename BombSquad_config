@@ -25,11 +25,11 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 read -p "[1-3]: " opcao
 case $opcao in
  1)
-  On
+  BombSquad_On
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
   BombSquad_config;;
  2)
-  server_config
+  BombSquad_server_config
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
   BombSquad_config;;
  3)
