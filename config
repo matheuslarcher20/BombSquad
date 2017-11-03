@@ -25,17 +25,17 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 read -p "[1-3]: " opcao
 case $opcao in
  1)
-  BombSquad_On
+  bash BombSquad_On
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
-  BombSquad_config;;
+  bash config;;
  2)
-  BombSquad_server_config
+  bash BombSquad_server_config
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
-  BombSquad_config;;
+  bash config;;
  3)
-  ssh_config
+  bash ssh_config
   read -n1 -r -p " Pressione uma tecla para Abrir novamente o config..."
-  BombSquad_config;;
+  bash config;;
    *)
   id > /dev/null 2> /dev/null
 esac
