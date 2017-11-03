@@ -27,7 +27,7 @@ git clone https://github.com/matheuslarcher20/BombSquad.git
 #done
 #cd ..
 rm -rf install 2> /dev/null
-rm -rf BombSquad 2> /dev/null
+#rm -rf BombSquad 2> /dev/null
 cd 
 #rm /bin/install
 echo -e "\033[05;32mInstalação concluida!!\033[0m"
