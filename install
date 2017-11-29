@@ -1,4 +1,5 @@
 # http://www.files.froemling.net/bombsquad/builds/
+cd 
 mkdir BombSquad_Server
 cd BombSquad_Server
 echo "BombSquad_Server_Linux_64bit_1.4.127" > /etc/cache_BombSquad_Server.txt
