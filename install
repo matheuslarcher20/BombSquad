@@ -18,16 +18,16 @@ rm /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 chmod 755 -R $cachesv
 apt-get install -y git
 git clone https://github.com/matheuslarcher20/BombSquad.git
-#cd BombSquad
-#for arqs in `ls`
-#do
-#rm /bin/$arqs 2>/dev/null
-#mv $arqs /bin
-#chmod +x /bin/$arqs
-#done
-#cd ..
+cd BombSquad
+for arqs in `ls`
+do
+rm /bin/$arqs 2>/dev/null
+mv $arqs /bin
+chmod +x /bin/$arqs
+done
+cd ..
 rm -rf install 2> /dev/null
-#rm -rf BombSquad 2> /dev/null
+rm -rf BombSquad 2> /dev/null
 cd 
-#rm /bin/install
+rm /bin/install
 echo -e "\033[05;32mInstalação concluida!!\033[0m"
