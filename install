@@ -1,4 +1,5 @@
 # http://www.files.froemling.net/bombsquad/builds/
+sudo su
 cd 
 mkdir BombSquad_Server
 cd BombSquad_Server
