@@ -2,7 +2,7 @@
 cd 
 mkdir BombSquad_Server
 cd BombSquad_Server
-echo "BombSquad_Server_Linux_64bit_1.4.145" > /etc/cache_BombSquad_Server.txt
+echo "BombSquad_Server_Linux_64bit_1.4.146" > /etc/cache_BombSquad_Server.txt
 cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
 tar -zxvf $cachesv.tar.gz
