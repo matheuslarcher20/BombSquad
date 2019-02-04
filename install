@@ -9,7 +9,7 @@ cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 #tar -zxvf $cachesv.tar.gz
 
 wget https://github.com/matheuslarcher20/BombSquad/raw/master/BombSquad_Server_Linux_64bit_1.4.147.zip
-apt-get install zip
+apt-get install zip -y
 unzip $cachesv.zip
 
 if [ -d /root/BombSquad_Server/$cachesv ]
