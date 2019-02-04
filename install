@@ -6,11 +6,8 @@ echo "BombSquad_Server_Linux_64bit_1.4.147" > /etc/cache_BombSquad_Server.txt
 cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 
 #wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
-#tar -zxvf $cachesv.tar.gz
-
 wget https://github.com/matheuslarcher20/BombSquad/raw/master/BombSquad_Server_Linux_64bit_1.4.147.zip
-apt-get install zip -y
-unzip $cachesv.zip
+tar -zxvf $cachesv.tar.gz
 
 if [ -d /root/BombSquad_Server/$cachesv ]
 then
