@@ -4,11 +4,17 @@ mkdir BombSquad_Server
 cd BombSquad_Server
 echo "BombSquad_Server_Linux_64bit_1.4.147" > /etc/cache_BombSquad_Server.txt
 cachesv=$(cat /etc/cache_BombSquad_Server.txt)
-wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
-tar -zxvf $cachesv.tar.gz
+
+#wget http://www.files.froemling.net/bombsquad/builds/$cachesv.tar.gz
+#tar -zxvf $cachesv.tar.gz
+
+apt-get install zip
+unzip $cachesv.zip
+
 if [ -d /root/BombSquad_Server/$cachesv ]
 then
 rm BombSquad*.tar.gz 2> /dev/null
+rm BombSquad*.zip 2> /dev/null
 else
 echo -e "\033[1;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
 exit
