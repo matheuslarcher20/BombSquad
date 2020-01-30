@@ -18,7 +18,7 @@ echo -e "\033[1;31m Erro!! O arquivo foi atualizado ou não existe!! \033[0m"
 exit
 fi
 apt-get update
-sudo apt-get install python2.7 libsdl2-2.0 -y
+yes Y | sudo apt-get install python libsdl2-2.0-0 libpython2.7
 rm /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 chmod 755 -R $cachesv
 apt-get install -y git
