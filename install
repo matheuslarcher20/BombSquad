@@ -20,6 +20,7 @@ fi
 apt-get update
 yes Y | sudo apt-get install python libsdl2-2.0-0 libpython2.7
 rm /etc/localtime && ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+apt-get install tmux
 chmod 755 -R $cachesv
 apt-get install -y git
 git clone https://github.com/matheuslarcher20/BombSquad.git
