@@ -3,7 +3,6 @@ cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 cd 
 cd BombSquad_Server
 cd $cachesv
-tmux kill-session -t bombsquad_server './bombsquad_server' /dev/null 2>/dev/null
 tmux new-session -d -s bombsquad_server './bombsquad_server'
 cd 
 echo "Servidor foi iniciado!!"
