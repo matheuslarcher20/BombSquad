@@ -1,7 +1,8 @@
+#!/bin/bash
 cachesv=$(cat /etc/cache_BombSquad_Server.txt)
 cd 
-echo -e "\033[1;32m Para desligar Ctrl + C\033[0m"
 cd BombSquad_Server
 cd $cachesv
-tmux kill-session -t $cachesv; cd $cachesv
+tmux kill-session -t bombsquad_server
+cd 
 echo "Servidor foi Parado!!"
